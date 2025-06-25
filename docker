@@ -91,9 +91,9 @@ docker network ls
 docker network create --driver bridge ct-bridge1
 docker network inspect ct-bridge1
 docker network ls
-docker run -it --network ct-bridge1 --name=ct-c1 busybox
+docker run -it -d --network ct-bridge1 --name=ct-c1 busybox
 Press Ctrl+P+Q, to switch back to Host
-docker run -it --network ct-bridge1 --name=ct-c2 busybox
+docker run -it -d --network ct-bridge1 --name=ct-c2 busybox
 Press Ctrl+P+Q, to switch back to Host
 docker network inspect ct-bridge1
 docker ps
