@@ -130,7 +130,7 @@ ip route
 
 Task 4: Launch a container to host network
 
-docker run -it --network host --name=ct-c5 busybox
+docker run -d -it --network host --name=ct-c5 busybox
 ip addr
 ifconfig
 Press Ctrl+P+Q, to switch back to Host
@@ -138,7 +138,7 @@ docker network inspect host
 
 Task 5: Launch a container to none network 
 
-docker run -it --network none --name=ct-c6 busybox
+docker run -d -it --network none --name=ct-c6 busybox
 ip addr
 Press Ctrl+P+Q, to switch back to Host
 
